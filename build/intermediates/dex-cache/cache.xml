@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="E:\WorkSpace\studio\MyHealth\app\libs\commons-httpclient-3.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="964cd74171f427720480efdec40a7c7f6e58426a">
+        <dex dex="E:\WorkSpace\studio\MyHealth\app\build\intermediates\pre-dexed\debug\commons-httpclient-3.1-1a07de1e765f2b9abe9a898ff81a8ffd40294b31.jar" />
+    </item>
+    <item
+        jar="E:\WorkSpace\studio\MyHealth\app\libs\gson-2.2.4.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="973e832af433b44c3ed11c426f2f390b29f3f3f8">
+        <dex dex="E:\WorkSpace\studio\MyHealth\app\build\intermediates\pre-dexed\debug\gson-2.2.4-753c75be9cd809a6ca35990361a231dc5f0f9ccf.jar" />
+    </item>
+
+</items>
