@@ -22,4 +22,22 @@
     <string name="http_exception_error">网络异常，请求超时</string>
     <string name="socket_exception_error">网络异常，读取数据超时</string>
     <string name="app_run_code_error">应用程序运行时异常</string>
+
+    <!-- Strings related to heartBeat-->
+    <string name="connection">Connection</string>
+    <string name="catch_start">Catch Start</string>
+    <string name="catch_end">Catch End</string>
+    <string name="service_stop">Service Stop</string>
+    <string name="no_devices">No Devices</string>
+    <string name="google_play_services">Google Play Services</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">DisConnected</string>
+    <string name="suspend">Suspended</string>
+    <string name="enable">Enable</string>
+    <string name="disable">Disable</string>
+    <string name="delete_file">Clean Data</string>
+    <string name="get_data">Get Data</string>
+    <string name="mode_interval">Interval</string>
+    <string name="mode_continuous">Continuous</string>
+    <string name="mode_run">Run Mode</string>
 </resources>

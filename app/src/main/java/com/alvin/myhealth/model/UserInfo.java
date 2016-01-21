@@ -10,8 +10,8 @@ public class UserInfo extends BaseEntity {
 
     private static final long serialVersionUID = -7513365813596633643L;
     private  String phone;
-    private String userName;
-
+    private String password;
+    private String createtime;
     public String getPhone() {
         return phone;
     }
@@ -20,11 +20,19 @@ public class UserInfo extends BaseEntity {
         this.phone = phone;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getPassword() {
+        return password;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getCreatetime() {
+        return createtime;
+    }
+
+    public void setCreatetime(String createtime) {
+        this.createtime = createtime;
     }
 }

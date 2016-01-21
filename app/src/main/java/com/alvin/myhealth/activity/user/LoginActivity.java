@@ -1,9 +1,10 @@
-package com.alvin.myhealth;
+package com.alvin.myhealth.activity.user;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.os.AsyncTask;
@@ -23,8 +24,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.alvin.myhealth.R;
+import com.alvin.myhealth.activity.heartbeat.HeartBeatActivity;
 import com.alvin.myhealth.manager.UserInfoManager;
-import com.alvin.myhealth.model.ResultModel;
+import com.alvin.myhealth.model.UserInfo;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -262,11 +265,20 @@ public class LoginActivity extends AppCompatActivity{
 
         @Override
         protected Boolean doInBackground(Void... params) {
-
-            ResultModel result = UserInfoManager.getInstance(getApplicationContext()).verifyPhone(mPhone);
+            UserInfo info = new UserInfo();
+            info.setPhone(mPhone);
+            info.setPassword(mPassword);
+            UserInfoManager manager = UserInfoManager.getInstance(getApplicationContext());
+            UserInfo result = manager.login(info);
             if (result != null) {
-                if(result.getFlag())
+                if(info.getPhone()!=null)
                 {
+                    //save login user message
+                    manager.setUserInfo(info);
+                    SharedPreferences sharedPreferences = getSharedPreferences("phone", Context.MODE_PRIVATE);
+                    SharedPreferences.Editor editor = sharedPreferences.edit();
+                    editor.putInt(mPhone, 1);
+                    editor.commit();
                     return true;
                 }else{
                     return false;
@@ -283,6 +295,7 @@ public class LoginActivity extends AppCompatActivity{
             showProgress(false);
 
             if (success) {
+                startActivity(new Intent(LoginActivity.this, HeartBeatActivity.class));
                 finish();
             } else {
                 mPasswordView.setError(getString(R.string.error_incorrect_password));

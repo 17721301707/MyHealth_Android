@@ -2,18 +2,18 @@
 <items version="2" >
 
     <item
-        jar="E:\WorkSpace\studio\MyHealth\app\libs\commons-httpclient-3.1.jar"
+        jar="E:\WorkSpace\studio\MyHealth\app\build\intermediates\exploded-aar\com.android.support\design\23.1.0\jars\classes.jar"
         jumboMode="false"
-        revision="23.0.2"
-        sha1="964cd74171f427720480efdec40a7c7f6e58426a">
-        <dex dex="E:\WorkSpace\studio\MyHealth\app\build\intermediates\pre-dexed\debug\commons-httpclient-3.1-1a07de1e765f2b9abe9a898ff81a8ffd40294b31.jar" />
+        revision="23.0.1"
+        sha1="19026d31f5d3ae868db81319671a642be5fbba08">
+        <dex dex="E:\WorkSpace\studio\MyHealth\app\build\intermediates\pre-dexed\debug\classes-4e14c60cb0ac97ef6562c7f511d4200d0851d4e1.jar" />
     </item>
     <item
-        jar="E:\WorkSpace\studio\MyHealth\app\libs\gson-2.2.4.jar"
+        jar="E:\WorkSpace\studio\MyHealth\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.0\jars\classes.jar"
         jumboMode="false"
-        revision="23.0.2"
-        sha1="973e832af433b44c3ed11c426f2f390b29f3f3f8">
-        <dex dex="E:\WorkSpace\studio\MyHealth\app\build\intermediates\pre-dexed\debug\gson-2.2.4-753c75be9cd809a6ca35990361a231dc5f0f9ccf.jar" />
+        revision="23.0.1"
+        sha1="3f151e49c316a5ab2c065969a3b3b55ef9b393fc">
+        <dex dex="E:\WorkSpace\studio\MyHealth\app\build\intermediates\pre-dexed\debug\classes-26af37c05b39e11c4f18c9372093ffafc8d6c07c.jar" />
     </item>
 
 </items>
