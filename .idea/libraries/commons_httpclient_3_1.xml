@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="commons-httpclient-3.1">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/app/libs/commons-httpclient-3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mobile/libs/commons-httpclient-3.1.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
